@@ -29,15 +29,16 @@ export const PlasmicAddRemoveButton__ArgProps = new Array();
 
 function PlasmicAddRemoveButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
-    <div
+    <button
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         "plasmic_default__all",
-        "plasmic_default__div",
+        "plasmic_default__button",
         "__wab_text",
         "root_reset_mXv5TZ5SUPGRneH9RoMn6q",
         "plasmic_default_styles",
@@ -57,7 +58,7 @@ function PlasmicAddRemoveButton__RenderFunc(props) {
       {hasVariant(variants, "removeToolFromSite", "removeToolFromSite")
         ? "Remove Tool "
         : "+ Add Tool"}
-    </div>
+    </button>
   );
 }
 

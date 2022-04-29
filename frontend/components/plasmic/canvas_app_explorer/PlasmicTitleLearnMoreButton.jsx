@@ -23,19 +23,24 @@ import "./PlasmicTitleLearnMoreButton.css"; // plasmic-import: oCDAnWtrIp/css
 
 export const PlasmicTitleLearnMoreButton__VariantProps = new Array();
 
-export const PlasmicTitleLearnMoreButton__ArgProps = new Array("children");
+export const PlasmicTitleLearnMoreButton__ArgProps = new Array(
+  "children",
+  "ariaLabel"
+);
 
 function PlasmicTitleLearnMoreButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
-    <div
+    <button
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
+      aria-label={args.ariaLabel}
       className={classNames(
         "plasmic_default__all",
-        "plasmic_default__div",
+        "plasmic_default__button",
         "root_reset_mXv5TZ5SUPGRneH9RoMn6q",
         "plasmic_default_styles",
         "plasmic_mixins",
@@ -49,7 +54,7 @@ function PlasmicTitleLearnMoreButton__RenderFunc(props) {
         value: args.children,
         className: classNames("TitleLearnMoreButton__slotTargetChildren__riL5Q")
       })}
-    </div>
+    </button>
   );
 }
 

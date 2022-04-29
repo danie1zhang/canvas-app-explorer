@@ -27,15 +27,16 @@ export const PlasmicExitLearnMoreButton__ArgProps = new Array();
 
 function PlasmicExitLearnMoreButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
   return (
-    <div
+    <button
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         "plasmic_default__all",
-        "plasmic_default__div",
+        "plasmic_default__button",
         "root_reset_mXv5TZ5SUPGRneH9RoMn6q",
         "plasmic_default_styles",
         "plasmic_mixins",
@@ -52,9 +53,10 @@ function PlasmicExitLearnMoreButton__RenderFunc(props) {
           "plasmic_default__svg",
           "ExitLearnMoreButton__svg__xxYgT"
         )}
+        id={""}
         role={"img"}
       />
-    </div>
+    </button>
   );
 }
 
